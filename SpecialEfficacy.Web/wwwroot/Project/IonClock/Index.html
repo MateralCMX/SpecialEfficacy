@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>离子时钟</title>
+    <link href="../../Lib/Bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="Index.css" rel="stylesheet" />
+</head>
+<body>
+    <canvas id="canvas" width="320" height="320">
+        浏览器版本过低
+    </canvas>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">设置</h5>
+                        <form>
+                            <div class="form-group">
+                                <label for="InputColor">颜色</label>
+                                <input class="form-control" id="InputColor" type="color" value="#2888d7" />
+                            </div>
+                            <div class="form-group">
+                                <label for="InputColor">背景颜色</label>
+                                <input class="form-control" id="InputBackgroundColor" type="color" value="#000" />
+                            </div>
+                            <div class="form-group">
+                                <label id="LabelFontSize" for="InputFontSize">字号(18)</label>
+                                <input class="form-control" id="InputFontSize" type="range" value="18" min="1" max="40" />
+                            </div>
+                            <div class="form-group">
+                                <label id="LabelLineWidth" for="InputLineWidth">线宽(17)</label>
+                                <input class="form-control" id="InputLineWidth" type="range" value="17" min="1" max="40" />
+                            </div>
+                            <div class="form-group">
+                                <label id="LabelShadowBlur" for="InputShadowBlur">阴影(15)</label>
+                                <input class="form-control" id="InputShadowBlur" type="range" value="15" min="0" max="40" />
+                            </div>
+                            <div class="form-group form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="InputIsAsc" checked>
+                                <label class="form-check-label" for="InputIsAsc">
+                                    正序
+                                </label>
+                            </div>
+                            <button id="BtnStartOrStop" class="btn btn-primary btn-block" type="button">停止</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/Lib/m-Tools/m-tools.js"></script>
+    <script src="/Lib/m-Reset/m-Reset.js"></script>
+    <script src="IonClock.js"></script>
+    <script src="Index.js"></script>
+</body>
+</html>

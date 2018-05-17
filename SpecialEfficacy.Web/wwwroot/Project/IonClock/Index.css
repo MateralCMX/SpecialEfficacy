@@ -1,0 +1,10 @@
+﻿body {
+  background-color: #000000; }
+
+.form-control[type=color] {
+  padding: 0; }
+
+canvas {
+  display: block;
+  margin: 0 auto; }
+
